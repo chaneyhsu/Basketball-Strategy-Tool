@@ -5,7 +5,7 @@ from difflib import get_close_matches
 
 @st.cache_data
 def load_kenpom_data():
-    df = pd.read_csv("/Users/chaney/Desktop/kenpom_all_teams.csv")
+    df = pd.read_csv("kenpom_all_teams.csv")
     df.columns = (
         df.columns
         .str.encode('ascii', errors='ignore').str.decode('ascii')
